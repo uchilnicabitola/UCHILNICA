@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pt">Училница Специјалти Кафе — Битола</title>
+
+<!-- ── PRIMARY META ── -->
+<meta name="description" content="Specialty кафе бар во Битола, вклучен на European Coffee Trip. Прецизно подготвено кафе, избрани зрна, уникатна атмосфера. Григор Прличев, 7000 Битола.">
+<meta name="keywords" content="Училница, specialty coffee Bitola, кафе Битола, specialty kafe, European Coffee Trip, Bitola cafe, кафулиња Битола, Uchilnica">
+<meta name="author" content="Училница Specialty Coffee">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1A1A18">
+<meta name="geo.region" content="MK">
+<meta name="geo.placename" content="Битола">
+<link rel="canonical" href="https://uchilnica.mk">
+
+<!-- ── FAVICON ── -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+<meta name="msapplication-TileColor" content="#1A1A18">
+
+<!-- ── OPEN GRAPH (Facebook, Viber, WhatsApp, iMessage) ── -->
+<meta property="og:type" content="restaurant">
+<meta property="og:site_name" content="Училница Specialty Coffee">
+<meta property="og:title" content="Училница Специјалти Кафе — Битола">
+<meta property="og:description" content="Specialty кафе бар во Битола, вклучен на European Coffee Trip. Григор Прличев, 7000 Битола.">
+<meta property="og:image" content="https://uchilnica.mk/assets/images/hero.jpg">
+<meta property="og:image:width" content="689">
+<meta property="og:image:height" content="1200">
+<meta property="og:image:alt" content="Нeon знак Училница — Specialty Coffee, Битола">
+<meta property="og:url" content="https://uchilnica.mk">
+<meta property="og:locale" content="mk_MK">
+
+<!-- ── TWITTER CARD ── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Училница Специјалти Кафе — Битола">
+<meta name="twitter:description" content="Specialty кафе бар во Битола, вклучен на European Coffee Trip.">
+<meta name="twitter:image" content="https://uchilnica.mk/assets/images/hero.jpg">
+
+<!-- ── GOOGLE / SEARCH ── -->
+<meta itemprop="name" content="Училница Specialty Coffee">
+<meta itemprop="description" content="Specialty кафе бар во Битола, вклучен на European Coffee Trip.">
+<meta itemprop="image" content="https://uchilnica.mk/assets/images/hero.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Училница Специјалти Кафе","alternateName":"Uchilnica Specialty Coffee","address":{"@type":"PostalAddress","streetAddress":"Григор Прличев","addressLocality":"Битола","postalCode":"7000","addressCountry":"MK"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"08:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"08:00","closes":"01:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"01:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"10:00","closes":"00:00"}],"url":"https://uchilnica.mk","sameAs":["https://www.instagram.com/uchilnicaspecialtycoffee"],"servesCuisine":"Specialty Coffee","priceRange":"$$"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+:root{--dk:#1A1A18;--lt:#F2EDE4;--ac:#8B4A2F;--td:#2C2B27;--tl:#E8E2D9;--bd:#D4CBBC;--nh:68px;--mw:1160px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:var(--td);background:var(--lt);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;background:none;border:none;font-family:inherit}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;height:var(--nh);display:flex;align-items:center;justify-content:space-between;padding:0 44px;z-index:200;transition:background .3s,box-shadow .3s}
+.nav.on{background:var(--dk);box-shadow:0 1px 0 rgba(212,203,188,.1)}
+.nl{display:flex;align-items:center}
+.nl img{height:48px;width:auto;filter:drop-shadow(0 1px 4px rgba(0,0,0,.4))}
+.links{display:flex;gap:36px;list-style:none}
+.links a{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--tl);opacity:.55;transition:opacity .2s}
+.links a:hover{opacity:1}
+.nav-r{display:flex;align-items:center;gap:22px}
+.lang{display:flex;align-items:center;gap:6px;font-size:11px;letter-spacing:.12em;color:var(--tl);padding:0}
+.lang span{opacity:.32;transition:opacity .2s}
+.lang span.on{opacity:1;font-weight:600}
+.lsep{width:1px;height:10px;background:rgba(232,226,217,.3)}
+.ham{display:none;flex-direction:column;gap:5px;padding:6px}
+.ham span{display:block;width:22px;height:1.5px;background:var(--tl);transition:.3s}
+.ham.on span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.ham.on span:nth-child(2){opacity:0}
+.ham.on span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.mnav{display:none;position:fixed;top:var(--nh);left:0;right:0;background:var(--dk);padding:18px 28px 28px;z-index:199;border-top:1px solid rgba(212,203,188,.08)}
+.mnav.on{display:block}
+.mnav ul{list-style:none}
+.mnav li{border-bottom:1px solid rgba(212,203,188,.07)}
+.mnav a{display:block;padding:15px 0;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--tl);opacity:.72}
+
+/* HERO */
+#home{position:relative;height:100vh;min-height:580px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--dk)}
+.hi{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.ho{position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,26,24,.25) 0%,rgba(26,26,24,.65) 100%)}
+.hc{position:relative;z-index:1;text-align:center;padding:0 20px;animation:fi 1.2s .1s both;margin-top:40px}
+.hsub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(15px,1.8vw,20px);color:var(--tl);opacity:.6;letter-spacing:.1em;margin-bottom:44px;animation:fi 1.2s .25s both}
+.btn-o{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(232,226,217,.5);color:var(--tl);font-size:10px;letter-spacing:.22em;text-transform:uppercase;padding:16px 40px;min-height:48px;transition:.3s;animation:fi 1.2s .38s both}
+.btn-o:hover{background:var(--ac);border-color:var(--ac)}
+.sc{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);z-index:1;opacity:.35}
+.sc-l{width:1px;height:48px;background:var(--tl);animation:sp 2.2s ease-in-out infinite}
+@keyframes sp{0%,100%{transform:scaleY(.25);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}}
+@keyframes fi{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+
+/* STATEMENT */
+#stmt{background:var(--lt);padding:112px 44px}
+.si{max-width:var(--mw);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:center}
+.bdg{display:inline-block;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--ac);border:1px solid var(--ac);padding:7px 14px;margin-bottom:30px}
+.stl{font-family:'Playfair Display',serif;font-size:clamp(26px,3.5vw,46px);font-weight:600;color:var(--td);line-height:1.2;margin-bottom:28px}
+.sb p{font-size:15px;font-weight:300;line-height:1.95;color:var(--td);opacity:.82;margin-bottom:16px}
+.sb p:last-child{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;opacity:.65;margin-bottom:0;letter-spacing:.02em}
+.simg{overflow:hidden;background:var(--dk);aspect-ratio:3/4}
+.simg img{width:100%;height:100%;object-fit:cover;filter:brightness(.9);transition:transform .8s}
+.simg:hover img{transform:scale(1.03)}
+
+/* DIVIDER */
+.div{width:calc(100% - 88px);max-width:var(--mw);margin:0 auto;height:1px;background:var(--bd)}
+
+/* MENU */
+#menu{background:var(--dk);padding:112px 44px}
+.min{max-width:var(--mw);margin:0 auto}
+.eye{font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:var(--tl);opacity:.35;margin-bottom:12px}
+.eye-d{font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:var(--td);opacity:.35;margin-bottom:12px}
+.tll{font-family:'Playfair Display',serif;font-size:clamp(26px,3.8vw,46px);font-weight:600;color:var(--tl);margin-bottom:52px}
+.tld{font-family:'Playfair Display',serif;font-size:clamp(24px,3.2vw,40px);font-weight:600;color:var(--td);margin-bottom:32px}
+.mtabs{display:flex;overflow-x:auto;border-bottom:1px solid rgba(212,203,188,.1);margin-bottom:48px;scrollbar-width:none}
+.mtabs::-webkit-scrollbar{display:none}
+.mtab{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--tl);opacity:.32;padding:10px 20px;white-space:nowrap;border-bottom:1.5px solid transparent;margin-bottom:-1px;transition:.2s}
+.mtab:hover{opacity:.65}
+.mtab.on{opacity:1;border-bottom-color:var(--ac)}
+.mpanel{display:none}
+.mpanel.on{display:block}
+.mgrid{display:grid;grid-template-columns:1fr 1fr}
+.mitem{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:20px 0;border-bottom:1px solid rgba(212,203,188,.07)}
+.mitem:nth-child(odd){padding-right:52px}
+.mitem:nth-child(even){padding-left:52px;border-left:1px solid rgba(212,203,188,.07)}
+.mname{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:500;color:var(--tl);margin-bottom:3px}
+.mdesc{font-size:12px;font-weight:300;color:var(--tl);opacity:.38;line-height:1.4}
+.mprice{font-size:12px;color:var(--tl);opacity:.52;white-space:nowrap;flex-shrink:0}
+.mnote{margin-top:52px;padding-top:36px;border-top:1px solid rgba(212,203,188,.07);text-align:center}
+.mnote p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--tl);opacity:.35}
+
+/* GALLERY */
+#gallery{background:var(--dk);padding:0 44px 112px}
+.ghead{max-width:var(--mw);margin:0 auto;padding:112px 0 48px}
+.ggrid{max-width:var(--mw);margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.gitem{overflow:hidden;cursor:pointer;background:#222220;position:relative}
+.gitem img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s,filter .4s;filter:brightness(.82)}
+.gitem:hover img{transform:scale(1.04);filter:brightness(1)}
+
+/* Lightbox */
+.lb{display:none;position:fixed;inset:0;background:rgba(26,26,24,.97);z-index:1000;align-items:center;justify-content:center}
+.lb.on{display:flex}
+.lbimg{max-width:90vw;max-height:88vh;object-fit:contain;display:block}
+.lbx,.lbp,.lbn{position:absolute;color:var(--tl);opacity:.4;transition:.2s;font-size:30px;padding:16px;line-height:1}
+.lbx:hover,.lbp:hover,.lbn:hover{opacity:1}
+.lbx{top:20px;right:24px;font-size:38px}
+.lbp{left:12px;top:50%;transform:translateY(-50%)}
+.lbn{right:12px;top:50%;transform:translateY(-50%)}
+
+/* ABOUT */
+#about{background:var(--lt);padding:112px 44px}
+.abin{max-width:640px;margin:0 auto;text-align:center}
+.ln{width:44px;height:1px;background:var(--bd);margin:0 auto 40px}
+.lnb{width:44px;height:1px;background:var(--bd);margin:40px auto 0}
+.abp{font-size:15px;font-weight:300;line-height:1.95;color:var(--td);opacity:.8;margin-bottom:18px}
+.abp:last-of-type{margin-bottom:0}
+
+/* SOCIAL */
+#social{background:var(--dk);padding:100px 44px}
+.socin{max-width:var(--mw);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:center}
+.soc-info p{font-size:15px;font-weight:300;color:var(--tl);opacity:.6;line-height:1.9;margin-bottom:12px;margin-top:28px}
+.soc-btn{display:inline-flex;align-items:center;gap:12px;margin-top:20px;border:1px solid rgba(212,203,188,.28);padding:15px 30px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--tl);opacity:.72;transition:.3s;min-height:48px;width:100%;justify-content:center}
+.soc-btn:hover{opacity:1;border-color:rgba(212,203,188,.65)}
+.soc-btn+.soc-btn{margin-top:10px}
+.soc-imgs{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.soc-imgs .gitem{aspect-ratio:1}
+
+/* CONTACT */
+#contact{background:var(--lt);padding:112px 44px}
+.ctin{max-width:var(--mw);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.hrow{display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid rgba(44,43,39,.08)}
+.hday{font-size:13px;font-weight:300;color:var(--td);opacity:.65}
+.htime{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--td)}
+.ctl{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--td);opacity:.35;margin:24px 0 6px}
+.ctv{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--td);opacity:.82;line-height:1.55}
+.ctv a{color:var(--td);opacity:.82;transition:.2s}
+.ctv a:hover{opacity:1;color:var(--ac)}
+.btn-ac{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--ac);color:var(--lt);font-size:10px;letter-spacing:.2em;text-transform:uppercase;padding:16px 36px;min-height:48px;margin-top:20px;width:100%;transition:.3s}
+.btn-ac:hover{background:#7a3f28}
+.mapw{height:460px;overflow:hidden;background:#d8d4ce;border:1px solid var(--bd)}
+.mapw iframe{width:100%;height:100%;border:0;filter:sepia(.15) contrast(1.05);display:block}
+
+/* FOOTER */
+footer{background:var(--dk);border-top:1px solid rgba(212,203,188,.09);padding:36px 44px}
+.ftin{max-width:var(--mw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.fbrand{font-family:'Playfair Display',serif;font-size:13px;color:var(--tl);opacity:.5}
+.fcopy{font-size:10px;color:var(--tl);opacity:.24;margin-top:3px;letter-spacing:.04em}
+.flinks{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.flnk{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--tl);opacity:.38;transition:.2s}
+.flnk:hover{opacity:.9}
+.fsep{width:1px;height:10px;background:rgba(212,203,188,.2)}
+
+/* FADE-IN */
+.fu{opacity:0;transform:translateY(20px);transition:opacity .65s,transform .65s}
+.fu.d1{transition-delay:.1s}.fu.d2{transition-delay:.2s}.fu.d3{transition-delay:.3s}
+.fu.v{opacity:1;transform:none}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .si,.ctin,.socin{gap:48px}
+  .mgrid{grid-template-columns:1fr}
+  .mitem:nth-child(odd),.mitem:nth-child(even){padding:18px 0;border-left:none}
+  .ggrid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+  .nav{padding:0 18px}
+  .links{display:none}
+  .ham{display:flex}
+  #stmt{padding:80px 20px}
+  .si{grid-template-columns:1fr;gap:36px}
+  .simg{order:-1;aspect-ratio:16/9}
+  #menu{padding:80px 20px}
+  .mtab{padding:10px 14px;font-size:9px}
+  #gallery{padding:0 10px 80px}
+  .ghead{padding:80px 0 36px}
+  .ggrid{gap:5px}
+  #about{padding:80px 20px}
+  #social{padding:80px 20px}
+  .socin{grid-template-columns:1fr;gap:40px}
+  .soc-imgs{display:none}
+  #contact{padding:80px 20px}
+  .ctin{grid-template-columns:1fr;gap:48px}
+  .mapw{height:300px}
+  footer{padding:28px 20px}
+  .ftin{flex-direction:column;gap:12px;text-align:center}
+  .flinks{justify-content:center}
+  .div{width:calc(100% - 40px)}
+}
+@media(max-width:480px){
+  .ggrid{grid-template-columns:1fr}
+  .hlogo{max-width:80vw}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="#home" class="nl">
+    <img src="assets/images/logo.png" alt="Училница Specialty Coffee">
+  </a>
+  <ul class="links">
+    <li><a href="#menu"    data-k="n.menu">Мени</a></li>
+    <li><a href="#gallery" data-k="n.gal">Галерија</a></li>
+    <li><a href="#social"  data-k="n.soc">Instagram</a></li>
+    <li><a href="#about"   data-k="n.ab">За нас</a></li>
+    <li><a href="#contact" data-k="n.ct">Контакт</a></li>
+  </ul>
+  <div class="nav-r">
+    <button class="lang" id="langBtn">
+      <span id="lMK" class="on">МК</span>
+      <span class="lsep"></span>
+      <span id="lEN">EN</span>
+    </button>
+    <button class="ham" id="ham"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mnav" id="mnav">
+  <ul>
+    <li><a href="#menu"    data-k="n.menu">Мени</a></li>
+    <li><a href="#gallery" data-k="n.gal">Галерија</a></li>
+    <li><a href="#social"  data-k="n.soc">Instagram</a></li>
+    <li><a href="#about"   data-k="n.ab">За нас</a></li>
+    <li><a href="#contact" data-k="n.ct">Контакт</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <img class="hi" src="assets/images/hero.jpg"
+       alt="Внатрешноста на Училница Specialty Coffee, Битола"
+       loading="eager" fetchpriority="high">
+  <div class="ho"></div>
+  <div class="hc">
+    <p class="hsub" data-k="h.sub">Specialty Coffee · Битола</p>
+    <a href="#menu" class="btn-o" data-k="h.cta">Погледни го Менито</a>
+  </div>
+  <div class="sc" aria-hidden="true"><div class="sc-l"></div></div>
+</section>
+
+<!-- STATEMENT -->
+<section id="stmt">
+  <div class="si">
+    <div class="fu">
+      <span class="bdg" data-k="s.bdg">Препорачано на European Coffee Trip</span>
+      <h2 class="stl" data-k="s.tl">Квалитет кој се гледа.<br>Вкус кој останува.</h2>
+      <div class="sb">
+        <p data-k="s.p1">Училница е едно од двете specialty кафулиња во Битола вклучени на European Coffee Trip — мапата на најдобрите кафулиња во Европа.</p>
+        <p data-k="s.p2">Секој производ е подготвен со прецизност. Секоја шолја е резултат на избор — на зрно, на метода, на момент.</p>
+        <p data-k="s.p3">Дојди. Посети. Остани.</p>
+      </div>
+    </div>
+    <div class="simg fu d2">
+      <img src="assets/images/stmt.jpg"
+           alt="Нeon знак и уметност во Училница, Битола"
+           loading="lazy">
+    </div>
+  </div>
+</section>
+
+<div class="div"></div>
+
+<!-- MENU -->
+<section id="menu">
+  <div class="min">
+    <p class="eye" data-k="m.eye">Мени</p>
+    <h2 class="tll" data-k="m.tl">Изберете</h2>
+    <div class="mtabs" id="mTabs" role="tablist"></div>
+    <div id="mPanels"></div>
+    <div class="mnote"><p data-k="m.note">Целосното мени е достапно на лице место</p></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="ghead">
+    <p class="eye" data-k="g.eye">Галерија</p>
+    <h2 class="tll" data-k="g.tl">Атмосфера</h2>
+  </div>
+    <div class="ggrid">
+    <div class="gitem" onclick="openLb(0)"  style="aspect-ratio:4/5"><img src="assets/images/g1.jpg"  alt="Надворешна тераса — Училница" loading="lazy"></div>
+    <div class="gitem" onclick="openLb(1)"  style="aspect-ratio:2/3"><img src="assets/images/g2.jpg"  alt="Specialty пијалок — Училница" loading="lazy"></div>
+    <div class="gitem" onclick="openLb(2)"  style="aspect-ratio:4/5"><img src="assets/images/g3.jpg"  alt="Шолја — Училница" loading="lazy"></div>
+    <div class="gitem" onclick="openLb(3)"  style="aspect-ratio:3/2"><img src="assets/images/g4.jpg"  alt="Внатрешност — Училница" loading="lazy"></div>
+    <div class="gitem" onclick="openLb(4)"  style="aspect-ratio:4/5"><img src="assets/images/g5.jpg"  alt="Latte art — Училница" loading="lazy"></div>
+    <div class="gitem" onclick="openLb(5)"  style="aspect-ratio:3/2"><img src="assets/images/g6.jpg"  alt="Ноќна атмосфера — Училница" loading="lazy"></div>
+    <div class="gitem" onclick="openLb(6)"  style="aspect-ratio:2/3"><img src="assets/images/g7.jpg"  alt="Бар — Училница" loading="lazy"></div>
+    <div class="gitem" onclick="openLb(7)"  style="aspect-ratio:4/5"><img src="assets/images/g8.jpg"  alt="Детал — Училница" loading="lazy"></div>
+    <div class="gitem" onclick="openLb(8)"  style="aspect-ratio:3/2"><img src="assets/images/g9.jpg"  alt="Нeon знаци — Училница" loading="lazy"></div>
+    <div class="gitem" onclick="openLb(9)"  style="aspect-ratio:16/7"><img src="assets/images/g10.jpg" alt="Нeon знаци 2 — Училница" loading="lazy"></div>
+    <div class="gitem" onclick="openLb(10)" style="aspect-ratio:4/5"><img src="assets/images/g11.jpg" alt="Внатрешност — Училница" loading="lazy"></div>
+    <div class="gitem" onclick="openLb(11)" style="aspect-ratio:16/7"><img src="assets/images/g12.jpg" alt="Капучино — Училница" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" role="dialog" aria-modal="true">
+  <button class="lbx" id="lbX" aria-label="Затвори">×</button>
+  <button class="lbp" id="lbP" aria-label="Претходна">‹</button>
+  <img class="lbimg" src="" alt="" id="lbImg">
+  <button class="lbn" id="lbN" aria-label="Следна">›</button>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="abin">
+    <div class="ln"></div>
+    <p class="eye-d" style="text-align:center" data-k="a.eye">За нас</p>
+    <h2 class="tld fu" data-k="a.tl">За Училница</h2>
+    <p class="abp fu d1" data-k="a.p1">Училница е specialty кафе бар сместен на улица Григор Прличев во Битола. Не е само место каде се пие кафе — е место каде квалитетот е стандард, не исклучок.</p>
+    <p class="abp fu d2" data-k="a.p2">Специјалти кафето значи трасабилност на потеклото, прецизност во подготовката, и почит кон зрното. Секоја шолја во Училница поминала низ сите тие чекори.</p>
+    <p class="abp fu d3" data-k="a.p3">Доколку барате кафе кое навистина нешто значи — наоѓате се на вистинското место.</p>
+    <div class="lnb"></div>
+  </div>
+</section>
+
+<div class="div"></div>
+
+<!-- SOCIAL -->
+<section id="social">
+  <div class="socin">
+    <div class="fu">
+      <span class="bdg" data-k="soc.bdg">Следете не</span>
+      <h2 class="tll" data-k="soc.tl">Социјални Мрежи</h2>
+      <div class="soc-info">
+        <p data-k="soc.p">Следете не на Instagram и Facebook за атмосфера, specialty пијалоци и новости од Училница.</p>
+      </div>
+      <a href="https://www.instagram.com/uchilnicaspecialtycoffee" target="_blank" rel="noopener" class="soc-btn">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+        @uchilnicaspecialtycoffee
+      </a>
+      <a href="https://www.facebook.com/share/1CSDkFoxPo/" target="_blank" rel="noopener" class="soc-btn">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        Училница на Facebook
+      </a>
+    </div>
+    <div class="soc-imgs fu d2">
+      <div class="gitem" onclick="openLb(4)"  style="aspect-ratio:1"><img src="assets/images/g5.jpg"  alt="Latte art — Училница" loading="lazy"></div>
+      <div class="gitem" onclick="openLb(5)"  style="aspect-ratio:1"><img src="assets/images/g6.jpg"  alt="Ноќна атмосфера" loading="lazy"></div>
+      <div class="gitem" onclick="openLb(11)" style="aspect-ratio:1"><img src="assets/images/g12.jpg" alt="Капучино" loading="lazy"></div>
+      <div class="gitem" onclick="openLb(8)"  style="aspect-ratio:1"><img src="assets/images/g9.jpg"  alt="Нeon знаци" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="ctin">
+    <div class="fu">
+      <p class="eye-d" data-k="c.eye">Контакт</p>
+      <h2 class="tld" data-k="c.hrs">Работно Време</h2>
+      <div>
+        <div class="hrow"><span class="hday" data-k="c.d1">Понеделник – Четврток</span><span class="htime">08:00 – 00:00</span></div>
+        <div class="hrow"><span class="hday" data-k="c.d2">Петок</span><span class="htime">08:00 – 01:00</span></div>
+        <div class="hrow"><span class="hday" data-k="c.d3">Сабота</span><span class="htime">10:00 – 01:00</span></div>
+        <div class="hrow"><span class="hday" data-k="c.d4">Недела</span><span class="htime">10:00 – 00:00</span></div>
+      </div>
+      <p class="ctl" data-k="c.al">Адреса</p>
+      <p class="ctv" data-k="c.adr">Григор Прличев бб<br>7000 Битола, Македонија</p>
+      <p class="ctl">Instagram</p>
+      <p class="ctv"><a href="https://www.instagram.com/uchilnicaspecialtycoffee" target="_blank" rel="noopener">@uchilnicaspecialtycoffee</a></p>
+      <p class="ctl">Facebook</p>
+      <p class="ctv"><a href="https://www.facebook.com/share/1CSDkFoxPo/" target="_blank" rel="noopener">Училница Specialty Coffee</a></p>
+      <a href="https://maps.app.goo.gl/V3T6thkpvgxVskR86" target="_blank" rel="noopener" class="btn-ac" data-k="c.btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Отвори во Google Maps
+      </a>
+    </div>
+    <div class="mapw fu d2">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3010.129772864733!2d21.328222199999995!3d41.0224167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAxJzIwLjciTiAyMcKwMTknNDEuNiJF!5e0!3m2!1sen!2smk!4v1714674816713!5m2!1sen!2smk"
+        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Локација на Училница, Битола">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ftin">
+    <div>
+      <p class="fbrand" data-k="f.brand">Училница Specialty Coffee</p>
+      <p class="fcopy"  data-k="f.copy">© 2025 Училница. Сите права задржани.</p>
+    </div>
+    <div class="flinks">
+      <a href="https://www.instagram.com/uchilnicaspecialtycoffee" target="_blank" rel="noopener" class="flnk">Instagram</a>
+      <span class="fsep"></span>
+      <a href="https://www.facebook.com/share/1CSDkFoxPo/" target="_blank" rel="noopener" class="flnk">Facebook</a>
+      <span class="fsep"></span>
+      <a href="https://maps.app.goo.gl/V3T6thkpvgxVskR86" target="_blank" rel="noopener" class="flnk">Google Maps</a>
+      <span class="fsep"></span>
+      <a href="https://europeancoffeetrip.com/cafe/uchilnica-bitola-northmacedonia/" target="_blank" rel="noopener" class="flnk">European Coffee Trip</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const MENU=[
+  {c:0,items:[
+    {mk:"Еспресо",en:"Espresso",dmk:"Двојна порција, specialty зрно",den:"Double shot, specialty bean",p:"120"},
+    {mk:"Американо",en:"Americano",dmk:"Еспресо со топла вода",den:"Espresso with hot water",p:"130"},
+    {mk:"Флет Вајт",en:"Flat White",dmk:"Еспресо со свиленкаста пена",den:"Espresso with silky milk",p:"160"},
+    {mk:"Лате",en:"Latte",dmk:"Еспресо со испарено млеко",den:"Espresso with steamed milk",p:"160"},
+    {mk:"Капучино",en:"Cappuccino",dmk:"Еспресо, млеко, пена",den:"Espresso, milk and foam",p:"150"},
+    {mk:"Кортадо",en:"Cortado",dmk:"Еспресо со малку млеко",den:"Espresso with a touch of milk",p:"140"},
+    {mk:"Маккиато",en:"Macchiato",dmk:"Еспресо со капка пена",den:"Espresso with a dash of foam",p:"120"},
+    {mk:"Филтер",en:"Filter",dmk:"Дневна препорака, specialty зрно",den:"Daily specialty selection",p:"150"},
+    {mk:"Pour Over",en:"Pour Over",dmk:"Рачна метода, прецизна екстракција",den:"Manual brew, precise extraction",p:"180"},
+  ]},
+  {c:1,items:[
+    {mk:"Колд Бру",en:"Cold Brew",dmk:"12-часовна студена екстракција",den:"12-hour cold extraction",p:"180"},
+    {mk:"Матча Лате",en:"Matcha Latte",dmk:"Јапонска матча со млеко",den:"Japanese matcha with milk",p:"190"},
+    {mk:"Чај Лате",en:"Chai Latte",dmk:"Зачинет чај со млеко",den:"Spiced tea with milk",p:"180"},
+    {mk:"Тумерик Лате",en:"Turmeric Latte",dmk:"Злато млеко со зачини",den:"Golden milk with spices",p:"180"},
+    {mk:"Бит Лате",en:"Beet Latte",dmk:"Свекла, ванила, млеко",den:"Beetroot, vanilla, milk",p:"185"},
+  ]},
+  {c:2,items:[
+    {mk:"Iced Лате",en:"Iced Latte",dmk:"Еспресо, мраз, млеко",den:"Espresso over ice with milk",p:"170"},
+    {mk:"Iced Матча",en:"Iced Matcha",dmk:"Студена матча со млеко",den:"Cold matcha with milk",p:"190"},
+    {mk:"Колд Бру Тоник",en:"Cold Brew Tonic",dmk:"Колд бру со тоник вода",den:"Cold brew with tonic water",p:"200"},
+    {mk:"Лимонада",en:"Lemonade",dmk:"Свежа, домашна лимонада",den:"Fresh house lemonade",p:"150"},
+    {mk:"Smoothie",en:"Smoothie",dmk:"Сезонски овошен избор",den:"Seasonal fruit blend",p:"180"},
+  ]},
+  {c:3,items:[
+    {mk:"Зелен Чај",en:"Green Tea",dmk:"Нежен, свеж",den:"Delicate and fresh",p:"120"},
+    {mk:"Ру Бос",en:"Rooibos",dmk:"Африканска билка, без кофеин",den:"African herb, caffeine-free",p:"120"},
+    {mk:"Билен Чај",en:"Herbal Tea",dmk:"Дневна препорака",den:"Daily selection",p:"120"},
+    {mk:"Џинџифилов Чај",en:"Ginger Tea",dmk:"Свеж ѓумбир, мед",den:"Fresh ginger with honey",p:"130"},
+  ]},
+  {c:4,items:[
+    {mk:"Вино — чаша",en:"Wine — glass",dmk:"Бело или Crно, по препорака",den:"White or Red, sommelier pick",p:"200"},
+    {mk:"Пиво",en:"Beer",dmk:"Домашно или увозно",den:"Local or imported",p:"180"},
+    {mk:"Кафе Коктел",en:"Coffee Cocktail",dmk:"Еспресо база, сезонски",den:"Espresso-based, seasonal",p:"280"},
+  ]},
+  {c:5,items:[
+    {mk:"Вода",en:"Water",dmk:"Природна или газирана",den:"Still or sparkling",p:"80"},
+    {mk:"Свеж Сок",en:"Fresh Juice",dmk:"Портокал или микс",den:"Orange or blend",p:"150"},
+    {mk:"Газиран пијалок",en:"Soft Drink",dmk:"По избор",den:"Your choice",p:"100"},
+    {mk:"Ред Бул",en:"Red Bull",dmk:"Класично или без шеќер",den:"Classic or sugar-free",p:"180"},
+  ]},
+];
+
+const GAL=[
+  {mk:"Надворешна тераса",en:"Outdoor terrace",src:"assets/images/g1.jpg"},
+  {mk:"Specialty пијалок",en:"Specialty drink",src:"assets/images/g2.jpg"},
+  {mk:"Шолја — детал",en:"Cup detail",src:"assets/images/g3.jpg"},
+  {mk:"Внатрешност",en:"Interior",src:"assets/images/g4.jpg"},
+  {mk:"Latte art",en:"Latte art",src:"assets/images/g5.jpg"},
+  {mk:"Ноќна атмосфера",en:"Evening atmosphere",src:"assets/images/g6.jpg"},
+  {mk:"Бар — Училница",en:"Bar — Uchilnica",src:"assets/images/g7.jpg"},
+  {mk:"Детал — лампа и кафе",en:"Detail — lamp and coffee",src:"assets/images/g8.jpg"},
+  {mk:"Нeon знаци",en:"Neon signs",src:"assets/images/g9.jpg"},
+  {mk:"Нeon знаци — ноќ",en:"Neon signs — night",src:"assets/images/g10.jpg"},
+  {mk:"Внатрешност — Bart",en:"Interior — Bart",src:"assets/images/g11.jpg"},
+  {mk:"Капучино — Училница",en:"Cappuccino — Uchilnica",src:"assets/images/g12.jpg"},
+];
+
+const T={
+  mk:{
+    "n.menu":"Мени","n.gal":"Галерија","n.soc":"Instagram","n.ab":"За нас","n.ct":"Контакт",
+    "h.sub":"Specialty Coffee · Битола","h.cta":"Погледни го Менито",
+    "s.bdg":"Препорачано на European Coffee Trip",
+    "s.tl":"Квалитет кој се гледа.<br>Вкус кој останува.",
+    "s.p1":"Училница е едно од двете specialty кафулиња во Битола вклучени на European Coffee Trip — мапата на најдобрите кафулиња во Европа.",
+    "s.p2":"Секој производ е подготвен со прецизност. Секоја шолја е резултат на избор — на зрно, на метода, на момент.",
+    "s.p3":"Дојди. Посети. Остани.",
+    "m.eye":"Мени","m.tl":"Изберете","m.note":"Целосното мени е достапно на лице место",
+    "m.cats":["Кафе","Специјалти","Студени","Чај","Алкохол","Безалкохолни"],
+    "g.eye":"Галерија","g.tl":"Атмосфера",
+    "soc.bdg":"Следете не","soc.tl":"Социјални Мрежи",
+    "soc.p":"Следете не на Instagram и Facebook за атмосфера, specialty пијалоци и новости од Училница.",
+    "a.eye":"За нас","a.tl":"За Училница",
+    "a.p1":"Училница е specialty кафе бар сместен на улица Григор Прличев во Битола. Не е само место каде се пие кафе — е место каде квалитетот е стандард, не исклучок.",
+    "a.p2":"Специјалти кафето значи трасабилност на потеклото, прецизност во подготовката, и почит кон зрното. Секоја шолја во Училница поминала низ сите тие чекори.",
+    "a.p3":"Доколку барате кафе кое навистина нешто значи — наоѓате се на вистинското место.",
+    "c.eye":"Контакт","c.hrs":"Работно Време",
+    "c.d1":"Понеделник – Четврток","c.d2":"Петок","c.d3":"Сабота","c.d4":"Недела",
+    "c.al":"Адреса","c.adr":"Григор Прличев бб<br>7000 Битола, Македонија","c.btn":"Отвори во Google Maps",
+    "f.brand":"Училница Specialty Coffee","f.copy":"© 2025 Училница. Сите права задржани.",
+  },
+  en:{
+    "n.menu":"Menu","n.gal":"Gallery","n.soc":"Instagram","n.ab":"About","n.ct":"Contact",
+    "h.sub":"Specialty Coffee · Bitola","h.cta":"View the Menu",
+    "s.bdg":"Featured on European Coffee Trip",
+    "s.tl":"Quality that shows.<br>Taste that stays.",
+    "s.p1":"Uchilnica is one of only two specialty cafés in Bitola listed on European Coffee Trip — the map of Europe's finest coffee destinations.",
+    "s.p2":"Every item is prepared with precision. Every cup is the result of a deliberate choice — of bean, of method, of moment.",
+    "s.p3":"Come. Visit. Stay.",
+    "m.eye":"Menu","m.tl":"Choose","m.note":"Full menu available in-house",
+    "m.cats":["Coffee","Specialty","Cold Drinks","Tea","Alcohol","Soft Drinks"],
+    "g.eye":"Gallery","g.tl":"Atmosphere",
+    "soc.bdg":"Follow us","soc.tl":"Social Media",
+    "soc.p":"Follow us on Instagram and Facebook for atmosphere, specialty drinks and news from Uchilnica.",
+    "a.eye":"About","a.tl":"About Uchilnica",
+    "a.p1":"Uchilnica is a specialty coffee bar located on Grigor Prlichev street in Bitola. Not just a place to drink coffee — a place where quality is the standard, not the exception.",
+    "a.p2":"Specialty coffee means traceability of origin, precision in preparation, and respect for the bean. Every cup at Uchilnica has passed through all of those steps.",
+    "a.p3":"If you are looking for coffee that actually means something — you are in the right place.",
+    "c.eye":"Contact","c.hrs":"Opening Hours",
+    "c.d1":"Monday – Thursday","c.d2":"Friday","c.d3":"Saturday","c.d4":"Sunday",
+    "c.al":"Address","c.adr":"Grigor Prlichev<br>7000 Bitola, North Macedonia","c.btn":"Open in Google Maps",
+    "f.brand":"Uchilnica Specialty Coffee","f.copy":"© 2025 Uchilnica. All rights reserved.",
+  }
+};
+
+let lang=localStorage.getItem('uchilnica_lang')||'mk', tab=0, lbIdx=0;
+const t=k=>T[lang][k]||k;
+
+function applyLang(){
+  document.documentElement.lang=lang;
+  document.getElementById('pt').textContent=lang==='mk'
+    ?'Училница Специјалти Кафе — Битола'
+    :'Uchilnica Specialty Coffee — Bitola';
+  document.querySelectorAll('[data-k]').forEach(el=>{
+    const v=t(el.getAttribute('data-k'));
+    if(v!==undefined) el.innerHTML=v;
+  });
+  document.getElementById('lMK').className=lang==='mk'?'on':'';
+  document.getElementById('lEN').className=lang==='en'?'on':'';
+  renderMenu();
+}
+
+document.getElementById('langBtn').onclick=()=>{
+  lang=lang==='mk'?'en':'mk';
+  localStorage.setItem('uchilnica_lang',lang);
+  applyLang();
+};
+
+function renderMenu(){
+  const cats=t('m.cats');
+  document.getElementById('mTabs').innerHTML=cats.map((c,i)=>
+    `<button class="mtab ${i===tab?'on':''}" onclick="setTab(${i})">${c}</button>`
+  ).join('');
+  document.getElementById('mPanels').innerHTML=MENU.map((cat,ci)=>
+    `<div class="mpanel ${ci===tab?'on':''}">
+      <div class="mgrid">
+        ${cat.items.map(it=>`
+          <div class="mitem">
+            <div><div class="mname">${lang==='mk'?it.mk:it.en}</div>
+            <div class="mdesc">${lang==='mk'?it.dmk:it.den}</div></div>
+            <div class="mprice">${it.p} ден</div>
+          </div>`).join('')}
+      </div>
+    </div>`
+  ).join('');
+}
+function setTab(i){tab=i;renderMenu();}
+
+function openLb(i){
+  lbIdx=i;
+  document.getElementById('lbImg').src=GAL[i].src;
+  document.getElementById('lbImg').alt=lang==='mk'?GAL[i].mk:GAL[i].en;
+  document.getElementById('lb').classList.add('on');
+  document.body.style.overflow='hidden';
+}
+function closeLb(){
+  document.getElementById('lb').classList.remove('on');
+  document.body.style.overflow='';
+}
+document.getElementById('lbX').onclick=closeLb;
+document.getElementById('lb').onclick=e=>{if(e.target===e.currentTarget)closeLb();};
+document.getElementById('lbP').onclick=e=>{e.stopPropagation();lbIdx=(lbIdx-1+GAL.length)%GAL.length;openLb(lbIdx);};
+document.getElementById('lbN').onclick=e=>{e.stopPropagation();lbIdx=(lbIdx+1)%GAL.length;openLb(lbIdx);};
+document.addEventListener('keydown',e=>{
+  if(!document.getElementById('lb').classList.contains('on'))return;
+  if(e.key==='Escape')closeLb();
+  if(e.key==='ArrowLeft')document.getElementById('lbP').click();
+  if(e.key==='ArrowRight')document.getElementById('lbN').click();
+});
+
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('on',scrollY>50);
+},{passive:true});
+
+const ham=document.getElementById('ham'),mn=document.getElementById('mnav');
+ham.onclick=()=>{ham.classList.toggle('on');mn.classList.toggle('on');};
+mn.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  ham.classList.remove('on');mn.classList.remove('on');
+}));
+
+const io=new IntersectionObserver(entries=>
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('v');}),{threshold:.1}
+);
+document.querySelectorAll('.fu').forEach(el=>io.observe(el));
+
+applyLang();
+</script>
+</body>
+</html>
